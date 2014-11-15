@@ -25,9 +25,7 @@ module Siever =
     /// Returns all primes up to x
     /// </summary>
     let Sieve x : int[] =
-        let fl_x : float = float x
-
-        // I create the array from 0 instead of 2 so indexing wont get broken
+        // I create the array from 0 instead of 2 so indexing will be easy
         let A = [| for i in 0..x do 
                     yield true |]
 
