@@ -14,7 +14,7 @@ open System
 //     
 //     for i = 2, 3, 4, ..., not exceeding √n:
 //      if A[i] is true:
-//        for j = i2, i2+i, i2+2i, ..., not exceeding n :
+//        for j = i^2, i^2+i, i^2+2i, ..., not exceeding n :
 //          A[j] := false
 //     
 //    Output: all i such that A[i] is true.
@@ -24,11 +24,18 @@ module Siever =
     /// <summary>
     /// Returns all primes up to x
     /// </summary>
-    let Sieve x : int[] = 
-        // I create the array from 0 instead of 2 so indexing wont get broken        
-        let A = [| for i in 0..x do yield true |]
+    let Sieve x : int[] =
+        let fl_x : float = float x
+
+        // I create the array from 0 instead of 2 so indexing wont get broken
+        let A = [| for i in 0..x do 
+                    yield true |]
+
+        for i in 2..int(sqrt(float x)) do
+            if A.[i] then
+                for j in [for k in 0..(x - i*i)/i -> (k*i+i*i)] do
+                    A.[j] <- false                    
         
         [| for i in 2..x do
             if A.[i] then
-             yield i |]        
-            
+             yield i |]
