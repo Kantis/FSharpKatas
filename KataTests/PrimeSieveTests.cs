@@ -7,7 +7,7 @@ namespace PrimeSieveTest
         [Fact]
         public void TestZero()
         {
-            int[] sievedPrimes = PrimeSieve.Siever.Sieve(0);
+            var sievedPrimes = PrimeSieve.Siever.Sieve(0);
 
             var expectedPrimes = new int[]{};
 
@@ -17,9 +17,9 @@ namespace PrimeSieveTest
         [Fact]
         public void TestFirstPrime()
         {
-            int[] sievedPrimes = PrimeSieve.Siever.Sieve(2);
+            var sievedPrimes = PrimeSieve.Siever.Sieve(2);
 
-            var expectedPrimes = new int[] {2};
+            var expectedPrimes = new[] {2};
 
             Assert.Equal(expectedPrimes, sievedPrimes);
         }
@@ -27,9 +27,9 @@ namespace PrimeSieveTest
         [Fact]
         public void TestFirstFive()
         {
-            int[] sievedPrimes = PrimeSieve.Siever.Sieve(11);
+            var sievedPrimes = PrimeSieve.Siever.Sieve(11);
 
-            var expectedPrimes = new int[] {2, 3, 5, 7, 11};
+            var expectedPrimes = new[] {2, 3, 5, 7, 11};
 
             Assert.Equal(expectedPrimes, sievedPrimes);
         }
@@ -37,11 +37,21 @@ namespace PrimeSieveTest
         [Fact]
         public void TestOneThousandthPrime()
         {
-            int thousandthPrime = 7919;
-            int[] sievedPrimes = PrimeSieve.Siever.Sieve(10000);
+            const int thousandthPrime = 7919;
+            var sievedPrimes = PrimeSieve.Siever.Sieve(10000);
 
             Assert.True(sievedPrimes.Length >= 1000);
             Assert.Equal(thousandthPrime, sievedPrimes[999]); // Account for zero-indexing
+        }
+
+        [Fact]
+        public void TestTenThousandthPrime()
+        {
+            const int tenThousandthPrime = 104729;
+            var sievedPrimes = PrimeSieve.Siever.Sieve(1000000);
+
+            Assert.True(sievedPrimes.Length > 9999);
+            Assert.Equal(tenThousandthPrime, sievedPrimes[9999]);
         }
     }
 }
