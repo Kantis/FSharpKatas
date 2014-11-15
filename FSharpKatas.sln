@@ -5,6 +5,15 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Tutorial", "Tutorial\Tutorial.fsproj", "{08E8DCA1-9F0C-4A69-913D-650CB2AEA028}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PrimeSieve", "PrimeSieve\PrimeSieve.fsproj", "{73A1A0A0-992C-4928-A1D8-A480683A133C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B410FC48-C610-4382-AE6B-D5D8B3501884}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataTests", "KataTests\KataTests.csproj", "{8364EF90-ADE8-496A-882B-2F98ECA6AB5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +24,14 @@ Global
 		{08E8DCA1-9F0C-4A69-913D-650CB2AEA028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08E8DCA1-9F0C-4A69-913D-650CB2AEA028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08E8DCA1-9F0C-4A69-913D-650CB2AEA028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A1A0A0-992C-4928-A1D8-A480683A133C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A1A0A0-992C-4928-A1D8-A480683A133C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A1A0A0-992C-4928-A1D8-A480683A133C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A1A0A0-992C-4928-A1D8-A480683A133C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8364EF90-ADE8-496A-882B-2F98ECA6AB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8364EF90-ADE8-496A-882B-2F98ECA6AB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8364EF90-ADE8-496A-882B-2F98ECA6AB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8364EF90-ADE8-496A-882B-2F98ECA6AB5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
