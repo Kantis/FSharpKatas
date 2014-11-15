@@ -1,4 +1,6 @@
-﻿open System
+﻿namespace PrimeSieve
+
+open System
 
 // ---------------------------------------------------------------
 //         Algorithm description expressed in pseudocode 
@@ -16,9 +18,9 @@
 //          A[j] := false
 //     
 //    Output: all i such that A[i] is true.
-
-
-[<EntryPoint>]
-let main argv = 
-    let amountOfPrimes = argv.[0]
-    0
+module Siever =
+    let Sieve x : int[] = 
+        if x = 1 then
+            [| 2 |]
+        else
+            [| |]

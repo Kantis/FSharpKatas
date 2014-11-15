@@ -5,9 +5,23 @@ namespace PrimeSieveTest
     public class PrimeSieveTests
     {
         [Fact]
-        public void TestMethod1()
+        public void TestZero()
         {
-            Assert.Equal(4, 2+2);
+            int[] actualPrimes = PrimeSieve.Siever.Sieve(0);
+
+            var expectedPrimes = new int[]{};
+
+            Assert.Equal(expectedPrimes, actualPrimes);
+        }
+
+        [Fact]
+        public void TestFirstPrime()
+        {
+            int[] actualPrimes = PrimeSieve.Siever.Sieve(1);
+
+            var expectedPrimes = new int[] {2};
+
+            Assert.Equal(expectedPrimes, actualPrimes);
         }
     }
 }

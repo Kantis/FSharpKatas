@@ -59,6 +59,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrimeSieve\PrimeSieve.fsproj">
+      <Project>{73a1a0a0-992c-4928-a1d8-a480683a133c}</Project>
+      <Name>PrimeSieve</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
