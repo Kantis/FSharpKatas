@@ -1,7 +1,0 @@
-L:\workspace\FSharpKatas\Tutorial\bin\Debug\Tutorial.XML
-L:\workspace\FSharpKatas\Tutorial\bin\Debug\Tutorial.exe
-L:\workspace\FSharpKatas\Tutorial\bin\Debug\Tutorial.pdb
-L:\workspace\FSharpKatas\Tutorial\bin\Debug\FSharp.Core.dll
-L:\workspace\FSharpKatas\Tutorial\bin\Debug\FSharp.Core.xml
-L:\workspace\FSharpKatas\Tutorial\obj\Debug\Tutorial.exe
-L:\workspace\FSharpKatas\Tutorial\obj\Debug\Tutorial.pdb
