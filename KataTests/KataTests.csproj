@@ -53,6 +53,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="KarateChopTests.cs" />
     <Compile Include="PrimeSieveTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,6 +61,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\KarateChop\KarateChop.fsproj">
+      <Project>{0e752b4d-4d4d-4e9c-b50a-17868de2b1ab}</Project>
+      <Name>KarateChop</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PrimeSieve\PrimeSieve.fsproj">
       <Project>{73a1a0a0-992c-4928-a1d8-a480683a133c}</Project>
       <Name>PrimeSieve</Name>

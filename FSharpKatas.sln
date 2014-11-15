@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B410FC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataTests", "KataTests\KataTests.csproj", "{8364EF90-ADE8-496A-882B-2F98ECA6AB5B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "KarateChop", "KarateChop\KarateChop.fsproj", "{0E752B4D-4D4D-4E9C-B50A-17868DE2B1AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{8364EF90-ADE8-496A-882B-2F98ECA6AB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8364EF90-ADE8-496A-882B-2F98ECA6AB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8364EF90-ADE8-496A-882B-2F98ECA6AB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E752B4D-4D4D-4E9C-B50A-17868DE2B1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E752B4D-4D4D-4E9C-B50A-17868DE2B1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E752B4D-4D4D-4E9C-B50A-17868DE2B1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E752B4D-4D4D-4E9C-B50A-17868DE2B1AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
